@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre Interactivo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --rosa-pastel: #fddde6;
+      --blanco: #ffffff;
+      --rojo-claro: #EDE8ED
+;
+    }
+
+    body {
+      margin: 0;
+      background: var(--rosa-pastel);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    .envelope {
+      position: relative;
+      width: 80vw;
+      max-width: 300px;
+      aspect-ratio: 3 / 2;
+      background: var(--blanco);
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      overflow: hidden;
+      border-radius: 10px;
+      transition: transform 0.6s ease;
+    }
+
+    .flap {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50%;
+      background: var(--rojo-claro);
+      transform-origin: top;
+      transition: transform 0.6s ease;
+      z-index: 2;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+    }
+
+    .envelope.open .flap {
+      transform: rotateX(-180deg);
+    }
+
+    .paper {
+      display: none;
+    }
+
+    @media (max-width: 400px) {
+      .envelope {
+        max-width: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="envelope" onclick="openEnvelope()">
+  <div class="flap"></div>
+  <div class="paper"></div>
+</div>
+
+<script>
+  function openEnvelope() {
+    const envelope = document.querySelector('.envelope');
+    envelope.classList.add('open');
+
+    setTimeout(() => {
+      window.location.href = "alexa.html";
+    }, 700); // espera 700 ms para redirigir
+  }
+</script>
+
+</body>
+</html>
