@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <audio autoplay loop>
+  <source src= "sonido/Someone%20You%20Loved%20(PianoCello)%20The%20Piano%20Guys.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio.
+</audio>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">  
@@ -8,6 +12,56 @@
   <title>Invitación Quinceañera</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff0f5;
+  margin: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.invitation-wrapper {
+  max-width: 600px;
+  background: white;
+  padding: 25px 30px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.title-main {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+  color: #d6336c;
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+
+.subtitle-event {
+  color: #b3335a;
+  margin-top: 0.6em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.text-content, a {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 0.5em 0;
+  color: #555;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.location-highlight {
+  font-weight: bold;
+  color: #d6336c;
+}
+
+} /*termina carrusel*/
       .monsieur-la-doulaise-regular {
   font-family: "Monsieur La Doulaise", cursive;
   font-weight: 400;
@@ -17,11 +71,13 @@
   font-family: "Homemade Apple", cursive;
   font-weight: 400;
   font-style: normal;
+         font-size: 2.2rem;
 }
 .meow-script-regular {
   font-family: "Meow Script", cursive;
   font-weight: 400;
   font-style: normal;
+   font-size: 1.9rem;
 }
     body {
       margin: 15;
@@ -47,19 +103,19 @@
     h1 {
       
       margin-top: 33px;
-      font-size: 3em;
+      font-size: 7em;
       color: #fa80ed;
     }
 
     .intro-text {
-      margin: 55px 0;
-      font-size: 1.4em;
-        color: beige
+      margin: 43px 0;
+      font-size: 1.7em;
+        color: #fa80ed
     }
 
     .names {
       margin-top: 27px;
-      font-size: 3em;
+      font-size: 4em;
         color: #fa80ed;
     }
 
@@ -77,7 +133,7 @@
     }
 
     button {
-      background-color: #c2185b;
+      background-color: #fa80ed;
       color: white;
       border: none;
       padding: 10px 20px;
@@ -103,7 +159,7 @@
   </style>
 </head>
 <body>
-
+<div class="invitation-wrapper">
   <!-- 📷 Imagen principal -->
   <div class="hero-image" style="background-image: url('image/15.png');">
     <!-- 🔁 Para agregar una imagen: reemplaza la URL vacía ('') con una ruta, por ejemplo: 'imagenes/portada.jpg' -->
@@ -111,26 +167,51 @@
 
   <div class="content">
     <script>(function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));</script><a data-type="countdown" data-id="7798279" class="tickcounter" style="display:block; left:0; width:100%; height:0; position:relative; padding-bottom:25%; margin:0 auto;" title="Faltan" href="//www.tickcounter.com/">Faltan</a>
-
+<br>
     <!-- 🎀 Nombre de la quinceañera -->
     <h1 class= "homemade-apple-regular">
        
        Alexa Ximena Basto Rubio</h1 >
 
+
     <!-- ✍️ Texto de presentación -->
-    <p class="intro-text" class="meow-script-regular">Quiero compartir con ustedes un momento<br> muy especial en mi vida<br> ¡mis quince años! </p>
+   
 
+  <!-- Invitación Especial -->
+    <div class= "names">
+  <p><strong></strong></p>
+  <p class=" meow-script-regular">Quiero compartir con ustedes un momento muy especial en mi vida: <strong>¡mis quince años!</strong></p>
+      <div class="hero-image" style="background-image: url( image/IMG_1166.png);"> </div>
+  <p class= "meow-script-regular">Con mucha emoción, mis queridos padres <br />
+  <strong>Cruz Eugenia Rubio Sandoval</strong> <br />
+  y <br />
+  <strong>Alexandro Samuel Basto González</strong>, <br />
+  junto con mis padrinos <br />
+  <strong>José de Jesús Villegas Mondragón</strong> y <strong>Blanca Alicia Robles Arce</strong>, <br />
+  te invitan a celebrar esta hermosa etapa rodeada de familia y amigos.</p>
+<div class="hero-image" style="background-image: url( image/IMG_1200.png);"> </div>
     <!-- 👨‍👩‍👧‍👦 Papás y padrinos -->
-    <div class="names" >
-      <p class= "meow-script-regular"><strong>Mis Padres:</strong> <br>Cruz Eugenia Rubio Sandoval<br> Alexandro Samuel Basto González </p>
-      <p class="meow-script-regular"><strong>Mis Padrinos:</strong><br>Blanca Alicia Robles Arce<br> José de Jesús Villegas Mondragón </p>
-    </div>
+   
+ 
+       <p class= " meow-script-regular">Quisiera que me acompañen a la ceremonia religiosa donde daré gracias por este nuevo capítulo en mi vida.</p>
 
+  <p class= "meow-script-regular"><strong>Ceremonia Religiosa:</strong> <br />
+    Parroquia: <span class="location-highlight">San Juan de la Cruz</span><br />
+   
+    <strong>Hora: 7:00 pm</strong>
+  </p>
     <!-- 📍 Botón y mapa para misa -->
     <button onclick="toggleMap('misa-map')">Abrir mapa misa</button>
     <div id="misa-map" class="map-container">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3732.1467953283586!2d-103.3366434!3d20.7042628!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b10018826923%3A0xf0a6fe1d6970dba1!2sParroquia%20San%20Juan%20de%20la%20Cruz!5e0!3m2!1ses!2smx!4v1754026357423!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div> <br>
+  <p class= "meow-script-regular">Después, la fiesta continuará en un lugar especial donde podremos bailar, reír y crear recuerdos inolvidables.</p>
+
+  <p class= "meow-script-regular"><strong>Fiesta y Recepción:</strong> <br />
+    Salón: <span class="location-highlight">Real de la Hacienda</span><br />
+   
+   <strong> Hora: 9:00 pm</strong>
+  </p>
 
     <!-- 📍 Botón y mapa para fiesta -->
     <button onclick="toggleMap('fiesta-map')">Abrir mapa fiesta</button>
